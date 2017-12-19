@@ -1,0 +1,8 @@
+---
+# tasks file for san.mariadb
+
+- name: install mariadb server
+  package: name=mariadb-server state=present
+
+- name: service start and enable
+  service: name=mariadb state=started enabled=yes
